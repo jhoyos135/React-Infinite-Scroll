@@ -4,7 +4,7 @@
 unsplash
 
 # Technologies and Packages
-node.js\
+node\
 express\
 react\
 axios\
