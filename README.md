@@ -3,7 +3,7 @@
 # api used
 unsplash
 
-# Technologies and Pachakges
+# Technologies and Packages
 node.js\
 express\
 react\
