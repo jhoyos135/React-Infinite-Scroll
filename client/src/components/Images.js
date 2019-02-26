@@ -7,7 +7,7 @@ class Images extends Component {
 
     state = {
         images: [],
-        count: 30,
+        count: 15,
         start: 1
     };
 
@@ -15,7 +15,7 @@ class Images extends Component {
         const {count, start} = this.state;
         axios.get(`/api/photos?count=${count}&start=${start}`)
             .then(res => this.setState({ images: res.data}));
-    }
+    };
 
     fetchImages = () => {
         const {count, start} = this.state;
@@ -24,7 +24,7 @@ class Images extends Component {
         })
         axios.get(`/api/photos?count=${count}&start=${start}`)
             .then(res => this.setState({ images: this.state.images.concat(res.data)}));
-    }
+    };
 
   render() {
       
